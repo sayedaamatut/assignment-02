@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;  
 }
 body{
     font-family: 'Work Sans', sans-serif;
@@ -14,8 +14,6 @@ body{
     justify-content: space-around;
     padding: 5px;
     background: rgba(255, 144, 14, 0.1)
-   
-
 }
 .heading-title{
     font-size: 45px;
@@ -58,6 +56,7 @@ body{
     padding: 20px;
     
 }
+
 /* list of features style */
 .primary{
    color: #131313; 
@@ -69,12 +68,7 @@ color:#727272 ;
 color:
 #FF900E ;
 }
-.list-of-feature{
-   
-   display: flex;
-   flex-direction: column;
-    
-}
+
 .list-heading{
     font-size: 45px;
     }
@@ -82,16 +76,172 @@ color:
     font-size: 16px;
     color: #727272;
 }
+.list-of-feature{
+    display: inline-flexbox;
+}
 .team-image{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 342px;
     height: 342px;
-    padding: 35px;
+    padding-top: 100px;
 }
 .description{
-    
-    
     text-align: right;
-    margin-right: 20px;
+    padding-bottom: 20px;
+   
+}
+/* architect style */
+.architect-title{
+    font-size: 45px;
+    color: #131313;
+   text-align: center;
+   padding: 40px;
+}
+.architect{
+    padding-top: 80px;
+   justify-content: space-evenly;
+   display: flex;
+   padding-left: 100px;
+}
+.love-enjoy{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+   
+}
+.morden-design{
+   justify-content: space-between;
+   padding-top: 20px;
+}
+.experiance{
+    width: 342px;
+    height: 200px;
+    background: #FF900E;
+    border-radius: 8px;
+    font-size: 65px;
+    color: #FFFFFF;
+    border: none;
+    padding: 30px;
+}
+/* fact style */
+.fact{
+    font-size: 45px;
+    color: #131313;
+
+}
+.fact-description{
+    font-size: 16px;
+    
+}
+.some-fact{
+    padding-top: 40px;
+    text-align: left;
+    padding: 10px;
+}
+/* award winning part */
+.container{
+    border: 2px solid #FF900E;
+    width: 200px;
+    height: 200px;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 40px; 
+    background-color: hsla(0, 16%, 82%, 0.256);
+    
+}
+.container:hover{
+    transform: scale(.5);
+}
+.blogs{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);  
+}
+
+/* sponspors style */
+.sponspors{
+    font-size: 45px;
+    color: #131313;
+    text-align: center;
+    padding: 20px;
+}
+.spons-description{
+    font-size: 16px;
+    color: #727272;
+
+}
+.sponspors-img{
+    justify-content: space-between;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+/* end description style */
+.end-section{
+    text-align: center;
+    padding: 30px;
+    font-size: 45px;
+}
+.end-description{
+    font-size: 16px;
+    color: #424242;
+}
+
+
+/* footer style */
+footer{
+    text-align: center;
+    padding: 100px;
+} 
+/* Media Quary
+/* mobile devics */
+@media only screen and (max-width:688px){
+    .nav-container{
+        padding: 0px; 
+        display: block;
+   
+}
+img{
+  width: 100%;
+  height: auto;
+  display: none;
+ 
+}
+.list-of-feature{
+    display: flex; 
+    flex-direction: column-reverse;
+    width: 100%;
+    
+}
+.team-image{
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);  
+}
+.architect{
+
+   display: flex;
+   flex-direction: column-reverse;
+   
+}
+.architect img{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.some-fact{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+.sponspors-img{
+   display: flex;
+   flex-direction: column;
+   column-gap: 20px;
+} 
 }
